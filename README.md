@@ -3,9 +3,9 @@
 This repo simply contains a few directories, used for learning gradle.
 
 * [Basic](https://github.com/pvi-axelor/Trying-out-gradle/tree/main/gradle-basic)
+* [Application](https://github.com/pvi-axelor/Trying-out-gradle/tree/main/gradle-java-application)
 
 Upcoming
-* Application
 * Library
 * Plug-in
 
