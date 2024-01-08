@@ -52,3 +52,14 @@ task implicIT {
         }
     }
 }
+
+//  it can also be used as such
+
+task implicit2 {
+    doLast {
+        String name = "BackStreetBoys"
+        name.each() {
+            print it + " "
+        }
+    }
+}
