@@ -42,3 +42,25 @@ application {
     // Define the main class for the application.
     mainClass = 'gradle.java.application.App'
 }
+
+// adding dependecies to tasks
+
+task task0 {
+    doLast {
+        println("printing from task 0")
+    }
+}
+
+task task1(dependsOn: "task0") {
+    doLast {
+        println("printing from task 1")
+    }
+}
+
+task task2 {
+    doLast {
+        println("printing from task 2")
+    }
+}
+
+task2.dependsOn task1
