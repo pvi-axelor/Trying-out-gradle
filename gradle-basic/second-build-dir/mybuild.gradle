@@ -1,0 +1,9 @@
+/* this is second build file, which can be used with gradle -q -b second-build.file task option */
+
+/* but currently it'll generate an error cause it doesn't have it's own setting file */
+
+task secondBuildHello {
+    doLast {
+        println ("Hello from second build file!")
+    }
+}
