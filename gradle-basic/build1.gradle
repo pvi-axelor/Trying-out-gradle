@@ -1,0 +1,25 @@
+// These are all the ways of creating a task in groovy in build.gradle file
+
+task created1 {
+    doLast {
+        println "task created using: task create"
+    }
+}
+
+task (created2) {
+    doFirst{
+        println "task created using: task (create)"
+    }
+}
+
+task ("created3") {
+    doFirst{
+        println "task created using: task (\"create\")"
+    }
+}
+
+tasks.create(name: "created4") {
+    doFirst{
+        println "task created using: tasks.create(name: \"create\")"
+    }
+}
