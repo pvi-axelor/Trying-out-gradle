@@ -26,6 +26,8 @@ task secondTask {
     }
 }
 
+/* this task shows the string manipulation, similar to java */
+
 task stringManipulation {
     doFirst {
         String name = "Rick Astley"
@@ -38,5 +40,15 @@ task stringManipulation {
 
         print(name.toUpperCase() + " : ")
         println(song.toLowerCase())
+    }
+}
+
+// there is an implicit object "it", used for counting
+
+task implicIT {
+    doLast {
+        10.times {
+            println it
+        }
     }
 }
