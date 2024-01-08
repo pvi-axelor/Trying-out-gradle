@@ -64,3 +64,11 @@ task task2 {
 }
 
 task2.dependsOn task1
+
+task task3 {
+    dependsOn("task2")
+}
+
+task3.doLast {
+    println("printing from task 3")
+}
