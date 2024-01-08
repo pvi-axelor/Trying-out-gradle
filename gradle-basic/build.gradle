@@ -19,3 +19,9 @@ task firstTask {
 /* It's required to use doFirst and doLast closures, as they will ensure which one runs at what time
     also, not using them will run the task at time of build
 */
+
+task secondTask {
+    doLast {
+        println("trying out different tasks!")
+    }
+}
