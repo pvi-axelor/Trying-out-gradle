@@ -23,3 +23,9 @@ tasks.create(name: "created4") {
         println "task created using: tasks.create(name: \"create\")"
     }
 }
+
+tasks.register("created5") {}
+
+created5.doLast {
+    println("printed from created 5")
+}
