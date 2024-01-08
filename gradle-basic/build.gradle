@@ -25,3 +25,18 @@ task secondTask {
         println("trying out different tasks!")
     }
 }
+
+task stringManipulation {
+    doFirst {
+        String name = "Rick Astley"
+        String song = "Never gonna give you up"
+
+        println("Printing without string manipulation")
+        println(name + " :" + song)
+
+        println("\nPrinting with string manipulation")
+
+        print(name.toUpperCase() + " : ")
+        println(song.toLowerCase())
+    }
+}
