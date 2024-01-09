@@ -1,0 +1,13 @@
+plugins {
+    id 'application'
+}
+
+version = '0.0.1_intital_pahse'
+
+mainClassName = 'some.random.pack.Main'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'some.random.pack.Main'
+    }
+}

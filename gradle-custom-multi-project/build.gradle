@@ -1,0 +1,20 @@
+// Applied the plugins to all the sub-projects
+
+subprojects {
+    // apply plugin: 'application'
+
+    task("printHello").doLast {
+        println "Hello, this is $project.name"
+    }
+}
+
+// assigns task to the specified project name
+
+project ('sub-project-2') {
+    task sayNothing {
+        doFirst {
+            println "ehh... nothing much! What about you?"
+        }
+    }
+}
+
