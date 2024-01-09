@@ -2,7 +2,7 @@
 
 This dir structure wasn't generated using gradle basic, it was manually build.
 
-It simply contains two files:
+It simply contains three files:
 
 > src
 >> main
@@ -13,7 +13,24 @@ It simply contains two files:
 and
 
 > build.gradle
+> build-auto-jar.gradle
 
 It can be built by running ```gradle build``` command.
 
 It can be run using ```java -cp build/libs/gradle-custom-build-0.0.1_inital_phase.jar trying.apackage.basic.Main```.
+
+----
+
+####Alternatively, you can have an executable jar file by using a diffrent build script.
+
+running ```gradle build``` will, by default, use ```build.gradle``` file, which will require passing class path.
+Instead, use the second file to get executable jar files
+
+Use 
+```gradle build --build-file build-auto-jar.gradle```
+or
+```gradle build -b build-auto-jar.gradle```
+
+
+to run, use
+```java -jar build/libs/gradle-custom-build-0.0.2_exec_jar.jar```
