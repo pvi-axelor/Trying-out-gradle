@@ -42,3 +42,6 @@ local.properties
 
 # my own test folders
 test-folder/
+
+# ignoring vscode files
+.vscode/
