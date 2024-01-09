@@ -44,7 +44,7 @@ to run, use
 
 ----
 
-####Alternatively, you can have a run task [optionally with excutable jar file] by using another diffrent build script.
+#### Alternatively, you can have a run task [optionally with excutable jar file] by using another diffrent build script.
 
 Use
 ```gradle build --build-file build-runnable-jar-with-run-task.gradle```
