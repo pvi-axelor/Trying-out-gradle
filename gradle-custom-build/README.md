@@ -2,7 +2,7 @@
 
 This dir structure wasn't generated using gradle basic, it was manually build.
 
-It simply contains four files:
+It simply contains six files:
 
 > src
 >> main
@@ -15,6 +15,10 @@ It simply contains four files:
 > build-auto-jar.gradle 
 
 > build-runnable-jar-with-run-task.gradle 
+
+> build-auto-build-run.gradle
+
+> settings.gradle
 
 ~~It can be built by running ```gradle build``` command.~~
 
