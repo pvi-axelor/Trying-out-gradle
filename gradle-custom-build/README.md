@@ -16,9 +16,11 @@ It simply contains four files:
 
 > build-runnable-jar-with-run-task.gradle 
 
-It can be built by running ```gradle build``` command.
+~~It can be built by running ```gradle build``` command.~~
 
-It can be run using ```java -cp build/libs/gradle-custom-build-0.0.1_inital_phase.jar trying.apackage.basic.Main```.
+~~It can be run using ```java -cp build/libs/gradle-custom-build-0.0.1_inital_phase.jar trying.apackage.basic.Main```.~~
+
+##### Update: Modify or delete settings.gradle file to run this.
 
 ----
 
@@ -55,3 +57,19 @@ to run it without creating jar file
 These two can also be chained as:
 ```gradle build run --build-file build-runnable-jar-with-run-task.gradle```
 to build and run in single command
+
+----
+
+### Update: settings.gradle file added
+As using specified build script using ```-b``` or, ```--build-file``` is considered deprecated, the new convention is to use ```settings.gradle```, which has an attribute named ```rootProject.buildFileName```, which has to be set to the build script existing in the root of the project folder.
+
+Currently, It is set to
+```rootProject.buildFileName = 'build-auto-build-run.gradle'```
+
+which can be updated to set to any above mentioned build scripts, starting with ```build-``` and ending with ```.gradle```.
+
+To build, simply use ```gradle build```
+To run, simply use ```gradle run```
+To list see the warnings, use ``` --warning-mode all```
+
+All three can be combined as ```gradle build run --warning-mode all```
