@@ -22,8 +22,11 @@ with dir structure as follows:
 With outer dir as follows:
 
 >.gitignore
+
 >build.gradle
+
 >README\.md
+
 >settings.gradle
 
 ----
