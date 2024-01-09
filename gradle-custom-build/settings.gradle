@@ -1,0 +1,2 @@
+rootProject.name = 'gradle-custom-build'
+rootProject.buildFileName = 'build-auto-build-run.gradle'

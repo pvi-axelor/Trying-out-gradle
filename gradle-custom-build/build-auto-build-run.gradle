@@ -1,0 +1,13 @@
+plugins {
+    id 'application'
+}
+
+version = '0.0.4_auto_build_run'
+
+mainClassName = 'trying.apackage.basic.Main'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'trying.apackage.basic.Main'
+    }
+}
