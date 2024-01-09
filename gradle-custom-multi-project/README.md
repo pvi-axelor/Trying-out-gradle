@@ -5,7 +5,9 @@ This gradle java multi-project was not generated using gradle init tool, but was
 This project has three sub-projects, namely:
 
 > sub-project-1
+
 > sub-project-2
+
 > sub-project-3
 
 with dir structure as follows:
