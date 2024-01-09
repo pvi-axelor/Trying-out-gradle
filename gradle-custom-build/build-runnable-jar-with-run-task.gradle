@@ -1,0 +1,13 @@
+plugins {
+    id 'application'
+}
+
+version='0.0.3_exec_jar_with_run_task'
+
+mainClassName='trying.apackage.basic.Main'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'trying.apackage.basic.Main'
+    }
+}
