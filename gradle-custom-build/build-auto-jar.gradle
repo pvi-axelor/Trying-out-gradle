@@ -1,0 +1,8 @@
+apply plugin: 'java'
+version='0.0.2_exec_jar'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'trying.apackage.basic.Main'
+    }
+}
