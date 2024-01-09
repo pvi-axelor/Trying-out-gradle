@@ -28,7 +28,7 @@ It simply contains six files:
 
 ----
 
-####Alternatively, you can have an executable jar file by using a diffrent build script.
+#### Alternatively, you can have an executable jar file by using a diffrent build script.
 
 running ```gradle build``` will, by default, use ```build.gradle``` file, which will require passing class path.
 Instead, use the second file to get executable jar files
